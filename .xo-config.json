@@ -1,0 +1,19 @@
+{
+  "prettier": true,
+  "rules": {
+    "@typescript-eslint/naming-convention": "off",
+    "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
+
+    "n/file-extension-in-import": "off",
+    "import/extensions": "off",
+    "import/no-extraneous-dependencies": "off",
+
+    "unicorn/filename-case": "off",
+    "unicorn/prevent-abbreviations": "off",
+
+    "capitalized-comments": "off"
+  }
+}
