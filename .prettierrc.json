@@ -1,9 +1,0 @@
-{
-  "trailingComma": "es5",
-  "singleQuote": true,
-  "bracketSpacing": true,
-  "semi": false,
-  "useTabs": false,
-  "endOfLine": "auto",
-  "plugins": ["prettier-plugin-tailwindcss"]
-}
