@@ -14,7 +14,6 @@
 
 const char* ssid = STASSID;
 const char* password = STAPSK;
-
 const char* host = "192.168.1.1";
 const uint16_t port = 3000;
 
@@ -28,7 +27,6 @@ void setup() {
   WiFiMulti.addAP(ssid, password);
 
   Serial.println();
-  Serial.println();
   Serial.print("Wait for WiFi... ");
 
   while (WiFiMulti.run() != WL_CONNECTED) {
@@ -36,7 +34,6 @@ void setup() {
     delay(500);
   }
 
-  Serial.println("");
   Serial.println("WiFi connected");
   Serial.println("IP address: ");
   Serial.println(WiFi.localIP());
