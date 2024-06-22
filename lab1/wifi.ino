@@ -21,8 +21,7 @@ ESP8266WiFiMulti WiFiMulti;
 
 void setup() {
   Serial.begin(115200);
-
-  // We start by connecting to a WiFi network
+    
   WiFi.mode(WIFI_STA);
   WiFiMulti.addAP(ssid, password);
 
@@ -33,9 +32,8 @@ void setup() {
     Serial.print(".");
     delay(500);
   }
-
-  Serial.println("WiFi connected");
-  Serial.println("IP address: ");
+    
+  Serial.println("WiFi connected, IP address: ");
   Serial.println(WiFi.localIP());
 
   delay(500);
@@ -61,7 +59,6 @@ void loop() {
   // This will send the request to the server
   client.println("hello from ESP8266");
 
-  // read back one line from server
   Serial.println("receiving from remote server");
   String line = client.readStringUntil('\r');
   Serial.println(line);
